@@ -1,8 +1,14 @@
 import React, { Component } from "react";
+import Aux from "./hoc/aux";
+import Header from "./components/header/header";
 
 class App extends Component {
   render() {
-    return <div>null</div>;
+    return (
+      <Aux>
+        <Header />
+      </Aux>
+    );
   }
 }
 
