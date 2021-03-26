@@ -3,6 +3,7 @@
   margin-top: 10vh;
   background: url("../../../assets/headerBackground/pexels-mike-yakaites-1123876.jpg")
     no-repeat center;
+  background-size: cover;
   width: 100%;
   height: 100%;
   /* height: 100%; */
