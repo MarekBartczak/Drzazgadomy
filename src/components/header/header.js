@@ -9,6 +9,10 @@ class Header extends Component {
     return (
       <div className={styles.header}>
         <Background />
+        <div className={styles.nameBox}>
+          <div className={styles.name}>Nazwa Firmy</div>
+          <div className={styles.companyText}>Najlepsze Domki</div>
+        </div>
         <Navbar />
         <CalllRequestForm />
       </div>

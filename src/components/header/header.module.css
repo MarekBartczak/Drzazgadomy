@@ -3,3 +3,23 @@
   width: 100vw;
   margin: auto;
 }
+
+.nameBox {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  top: 35vh;
+  left: calc(50vw - 500px / 2);
+}
+.name {
+  text-align: center;
+  color: white;
+  font-size: 4vw;
+  font-family: "Nunito", sans-serif;
+}
+.companyText {
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+  font-family: "Nunito", sans-serif;
+}
