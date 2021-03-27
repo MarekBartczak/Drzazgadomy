@@ -6,6 +6,19 @@
   width: 70vw;
   background: rgb(90, 90, 90);
 }
+
+.form {
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 55%;
+  width: 100%;
+}
+
 .title {
   margin-top: 1%;
   position: absolute;
@@ -71,11 +84,4 @@
 .callRequestBtn:hover {
   background: rgb(255, 255, 255);
   color: black;
-}
-
-.form {
-  position: absolute;
-  top: 50%;
-  width: 80%;
-  left: 10%;
 }
