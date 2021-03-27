@@ -1,6 +1,6 @@
 .shortAboutSection {
   width: 100vw;
-  height: 50vh;
+  height: 550px;
   background: rgb(202, 202, 202);
 }
 .about {
@@ -10,21 +10,22 @@
   align-items: center;
   width: 100%;
   color: black;
-  font-size: 2vw;
+  font-size: 28px;
 }
 .about p {
   width: 70vw;
   padding: auto;
-  padding-top: 15vh;
+  padding-top: 150px;
+  font-family: "Lora", serif;
   margin: auto;
-  text-align: center;
+  text-align: justify;
 }
 .btns {
   position: relative;
-  bottom: 15%;
+  bottom: 100px;
   margin: auto;
-  width: 50vw;
-  height: 30vh;
+  width: 800px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -37,8 +38,10 @@
   height: 50px;
   width: 250px;
   color: white;
-  font-size: 1.1vw;
+  font-size: 18px;
   padding: 10px;
+  font-family: "Lora", serif;
+
   text-align: center;
   outline: none;
   border: none;

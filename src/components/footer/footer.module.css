@@ -1,0 +1,36 @@
+.footer {
+  width: 100vw;
+  height: 200px;
+  background: rgb(0, 0, 0);
+  margin-top: 150px;
+}
+
+.links {
+  margin: auto;
+  width: 70vw;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.links a {
+  outline: none;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s linear;
+}
+.links a:hover {
+  color: rgb(211, 147, 28);
+}
+
+.about,
+.contact {
+  color: white;
+  transition: all 0.2s linear;
+}
+.about:hover,
+.contact:hover {
+  color: rgb(211, 147, 28);
+}

@@ -51,12 +51,12 @@
   /* border-bottom: 1px solid white; */
   margin-left: 100px;
   font-size: 1.1vw;
-  transition: all 0.2s linear;
 }
 .phone a {
   color: white;
   outline: none;
   text-decoration: none;
+  transition: all 0.2s linear;
 }
 
 .phone a:hover {

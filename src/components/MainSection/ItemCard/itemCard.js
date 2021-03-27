@@ -3,7 +3,6 @@ import styles from "./itemCard.module.css";
 
 class ItemCard extends Component {
   render() {
-    console.log(this.props.ItemCardPictureUrl);
     return (
       <div className={styles.itemCard}>
         <div

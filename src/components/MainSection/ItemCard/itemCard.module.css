@@ -1,25 +1,56 @@
 .itemCard {
-  background: inherit;
-  width: 34vw;
-  height: 650px;
-  background: none;
+  width: calc(34vw - 20px);
+  height: 500px;
+  /* background: red; */
+  padding: 10px;
+  transition: all 0.2s linear;
+}
+.itemCard:hover {
+  box-shadow: 0 0 10px black;
+  /* transform: rotate(10deg); */
+}
+.itemCard:hover .header {
+  font-size: 2.05vw;
+  padding: 0;
+}
+.itemCard:hover .info {
+  font-size: 1.03vw;
+  padding: 0;
+}
+.itemCard:hover .pic {
+  background-size: 105%;
+  padding: 0;
+  height: 62%;
 }
 .pic {
   width: 100%;
   height: 60%;
+
+  /* margin: auto; */
+  text-align: center;
   /* background: url("../../../assets/mainSection/pexels-max-vakhtbovych-7173668.jpeg"); */
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
+  padding: 2px;
+  transition: all 0.2s linear;
 }
 .header {
   color: black;
   font-weight: bold;
   font-size: 2vw;
+  padding: 0 5px;
   margin-top: 10px;
   margin-bottom: 30px;
+  font-family: "Roboto Mono", monospace;
+  transition: all 0.2s linear;
 }
 .info {
   color: black;
+  padding: 0 5px;
   font-size: 1vw;
-  padding-bottom: 10px;
+  font-family: "Lora", serif;
+  transition: all 0.2s linear;
+
+  /* padding-bottom: 10px; */
 }
