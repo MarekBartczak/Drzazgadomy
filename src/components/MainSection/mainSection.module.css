@@ -1,0 +1,11 @@
+.MainSection {
+  width: 70vw;
+  background: none;
+  margin: auto;
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-items: center;
+}

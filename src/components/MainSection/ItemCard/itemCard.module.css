@@ -1,0 +1,25 @@
+.itemCard {
+  background: inherit;
+  width: 34vw;
+  height: 650px;
+  background: none;
+}
+.pic {
+  width: 100%;
+  height: 60%;
+  /* background: url("../../../assets/mainSection/pexels-max-vakhtbovych-7173668.jpeg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header {
+  color: black;
+  font-weight: bold;
+  font-size: 2vw;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.info {
+  color: black;
+  font-size: 1vw;
+  padding-bottom: 10px;
+}
