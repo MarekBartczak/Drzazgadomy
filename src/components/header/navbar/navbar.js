@@ -17,7 +17,7 @@ class Navbar extends Component {
         <div className={styles.phoneMobile}>
           <a href="tel:+48342234345">
             {" "}
-            <i class="fas fa-phone-alt"></i>
+            <i className="fas fa-phone-alt"></i>
           </a>
         </div>
         <div className={styles.phone}>
