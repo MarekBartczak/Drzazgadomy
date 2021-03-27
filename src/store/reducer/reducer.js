@@ -51,6 +51,9 @@ const initialState = {
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quiaiste provident temporibus. Laboriosam hic sapiente repudiandae! Repellendus qui architecto necessitatibus, hic harum facere in at,similique mollitia aliquam officiis.",
     },
   ],
+  hamburgerMenu: {
+    isClose: false,
+  },
 };
 
 const reducer = (state = initialState, action) => {
@@ -58,6 +61,15 @@ const reducer = (state = initialState, action) => {
     case actionsTypes.GET_ITEM:
       return {
         ...state,
+      };
+
+    case actionsTypes.HAMBURGER_MENU_TOGGLE:
+      return {
+        ...state,
+        hamburgerMenu: {
+          ...state.hamburgerMenu,
+          isClose: !state.hamburgerMenu.isClose,
+        },
       };
     default:
       return state;

@@ -1,1 +1,3 @@
 export const GET_ITEM = "GET_ITEM";
+
+export const HAMBURGER_MENU_TOGGLE = "HAMBURGER_MENU_TOGGLE";
