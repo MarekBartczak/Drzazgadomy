@@ -6,10 +6,13 @@
 
 .nameBox {
   position: absolute;
-  width: 500px;
-  height: 300px;
-  top: 35vh;
-  left: calc(50vw - 500px / 2);
+  height: fit-content;
+  top: 40%;
+  width: 100%;
+
+  /* width: 500px; */
+  /* height: 300px; */
+  /* left: calc(50vw - 500px / 2); */
 }
 .name {
   text-align: center;

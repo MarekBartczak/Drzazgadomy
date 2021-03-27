@@ -14,15 +14,15 @@ class CallRequestForm extends Component {
         <div className={styles.form}>
           <input
             className={styles.callRequestName}
-            placeholder={"Podaj Imię"}
+            placeholder={"Imię"}
           ></input>
           <input
             className={styles.callRequestPhone}
-            placeholder={"Podaj Nr telefonu"}
+            placeholder={"Nr telefonu"}
           ></input>
           <select className={styles.callRequestTime}>
             <option value="" selected disabled hidden>
-              O jakiej porze preferujesz kontakt?
+              pora kontaktu
             </option>
             <option>O każdej porze</option>
             <option>Rano</option>

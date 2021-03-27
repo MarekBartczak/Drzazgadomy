@@ -9,3 +9,18 @@
   column-gap: 30px;
   justify-items: center;
 }
+
+@media (max-width: 1200px) {
+  .MainSection {
+    width: 100vw;
+    column-gap: 5px;
+  }
+}
+@media (max-width: 830px) {
+  .MainSection {
+    width: 100vw;
+    column-gap: 5px;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}

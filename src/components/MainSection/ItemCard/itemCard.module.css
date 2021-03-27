@@ -1,34 +1,32 @@
 .itemCard {
-  width: calc(34vw - 20px);
-  height: 500px;
+  width: 100%;
+  height: 450px;
   /* background: red; */
   padding: 10px;
+  /* margin: 10px; */
   transition: all 0.2s linear;
 }
 .itemCard:hover {
   box-shadow: 0 0 10px black;
-  /* transform: rotate(10deg); */
 }
 .itemCard:hover .header {
-  font-size: 2.05vw;
+  font-size: 25px;
   padding: 0;
 }
 .itemCard:hover .info {
-  font-size: 1.03vw;
+  font-size: 14px;
+  text-align: justify;
   padding: 0;
 }
 .itemCard:hover .pic {
   background-size: 105%;
   padding: 0;
-  height: 62%;
+  height: 70%;
 }
 .pic {
   width: 100%;
   height: 60%;
-
-  /* margin: auto; */
   text-align: center;
-  /* background: url("../../../assets/mainSection/pexels-max-vakhtbovych-7173668.jpeg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -38,7 +36,7 @@
 .header {
   color: black;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 24px;
   padding: 0 5px;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -48,9 +46,33 @@
 .info {
   color: black;
   padding: 0 5px;
-  font-size: 1vw;
+  font-size: 13px;
+  text-align: justify;
+
   font-family: "Lora", serif;
   transition: all 0.2s linear;
 
   /* padding-bottom: 10px; */
+}
+
+@media (max-width: 1200px) {
+  .itemCard {
+    /* padding: 0 50px; */
+    width: 80%;
+  }
+  .header {
+    font-size: 20px;
+    padding: 0;
+  }
+  .itemCard:hover .header {
+    font-size: 21px;
+  }
+  .info {
+    font-size: 11px;
+    padding: 0;
+  }
+  .itemCard:hover .info {
+    font-size: 11px;
+    text-align: justify;
+  }
 }

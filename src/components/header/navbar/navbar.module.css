@@ -55,6 +55,28 @@
   color: white;
   font-size: 19px;
 }
+.phoneMobile {
+  display: none;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  color: white;
+  font-size: 19px;
+}
+.phoneMobile i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: white;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+a {
+  text-decoration: none;
+}
 .phone a {
   display: flex;
   flex-direction: column;
@@ -77,5 +99,14 @@
   }
   .nav {
     display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .phone {
+    display: none;
+  }
+  .phoneMobile {
+    display: block;
   }
 }

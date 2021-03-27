@@ -14,6 +14,12 @@ class Navbar extends Component {
           <div className={styles.services}>Usługi</div>
           <div className={styles.contactUs}>Napisz do nas</div>
         </div>
+        <div className={styles.phoneMobile}>
+          <a href="tel:+48342234345">
+            {" "}
+            <i class="fas fa-phone-alt"></i>
+          </a>
+        </div>
         <div className={styles.phone}>
           <a href="tel:+48342234345">+48 342 234 345</a>
         </div>

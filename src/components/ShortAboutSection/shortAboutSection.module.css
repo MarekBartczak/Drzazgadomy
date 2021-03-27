@@ -1,6 +1,6 @@
 .shortAboutSection {
   width: 100vw;
-  height: 550px;
+  /* height: 550px; */
   background: rgb(202, 202, 202);
 }
 .about {
@@ -18,14 +18,16 @@
   padding-top: 150px;
   font-family: "Lora", serif;
   margin: auto;
+  font-size: 18px;
   text-align: justify;
 }
 .btns {
-  position: relative;
-  bottom: 100px;
+  /* position: relative; */
+  /* bottom: 100px; */
   margin: auto;
-  width: 800px;
-  height: 400px;
+  /* margin: 20px; */
+  /* width: 800px; */
+  /* height: 400px; */
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -35,11 +37,11 @@
 
 .ourProjects,
 .aboutUs {
+  margin: 10px;
   height: 50px;
   width: 250px;
   color: white;
   font-size: 18px;
-  padding: 10px;
   font-family: "Lora", serif;
 
   text-align: center;
@@ -58,4 +60,15 @@
 }
 .aboutUs:hover {
   background: rgb(173, 121, 24);
+}
+@media (max-width: 580px) {
+  .btns {
+    flex-direction: column;
+  }
+  .ourProjects,
+  .aboutUs {
+    height: 25px;
+    width: 150px;
+    font-size: 14px;
+  }
 }
