@@ -11,9 +11,9 @@ class App extends Component {
     return (
       <Aux>
         <Header />
-        <ShortAboutSection />
-        <MainSection />
-        <Footer />
+        {/* <ShortAboutSection /> */}
+        {/* <MainSection /> */}
+        {/* <Footer /> */}
       </Aux>
     );
   }

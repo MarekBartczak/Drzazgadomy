@@ -6,7 +6,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className={styles.navbar}>
-        <div className={styles.name}>Nazwa Firmy</div>
+        <div className={styles.name}></div>
         <Hamburger />
         <div className={styles.nav}>
           <div className={styles.home}>Strona Główna</div>

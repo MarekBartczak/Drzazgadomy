@@ -8,15 +8,22 @@
 }
 
 .name {
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-left: 5%;
-  height: 100%;
+  height: 100px;
+  width: 60%;
   color: rgb(255, 255, 255);
   font-size: 24px;
-
-  width: auto;
+  background: url("../../../assets//logo/logo2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  /* width: auto;
   /* background: blue; */
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
 }
 .nav {
   /* background: red; */
