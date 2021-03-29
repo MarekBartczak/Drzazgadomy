@@ -1,16 +1,20 @@
 import React, { Component } from "react";
 import Aux from "./hoc/aux";
 
-import Header from "./components/header/header";
+import Header from "./components/topSection/header";
 import ShortAboutSection from "./components/ShortAboutSection/shortAboutSection";
-import MainSection from "./components/MainSection/mainSection";
-import Footer from "./components/footer/footer";
+import MainSection from "./components/MainSection/itemSection/mainSection";
+import Footer from "./components/footerSection/footer";
+import CallRequestForm from "./components/callRequestForm/callRequestForm";
 
+import NavBar from "./components/topSection/navbar/navbar";
 class App extends Component {
   render() {
     return (
       <Aux>
-        <Header />
+        <NavBar />
+        {/* <Header /> */}
+        {/* <CallRequestForm /> */}
         {/* <ShortAboutSection /> */}
         {/* <MainSection /> */}
         {/* <Footer /> */}

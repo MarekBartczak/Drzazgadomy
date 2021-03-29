@@ -1,0 +1,38 @@
+.background {
+  /* position: relative; */
+  margin-top: 100px;
+  background: url("../../../assets/headerBackground/pexels-cleyder-duque-3637789.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  z-index: -100;
+
+  /* height: 60%; */
+  /* transition: all 0.2s linear; */
+}
+
+.dimm {
+  /* position: relative; */
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background: rgba(94, 94, 94, 0.589);
+}
+
+@media (max-width: 600px) {
+  .background {
+    /* position: absolute; */
+    margin-top: 100px;
+    background-position: top;
+    background-size: cover;
+    height: 50vh;
+    /* transition: all 0.2s linear; */
+  }
+  .dimm {
+    /* position: relative; */
+    width: 100vw;
+    height: 50vh;
+    background: rgba(94, 94, 94, 0.589);
+  }
+}

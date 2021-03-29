@@ -1,25 +1,32 @@
 .MainSection {
-  width: 70vw;
+  position: absolute;
+  top: calc(100vh + 360px);
+  width: 70%;
+
   background: none;
-  margin: auto;
+
+  /* margin-left: 15%; */
   display: grid;
+  display: none;
   margin-top: 100px;
   grid-template-columns: 1fr 1fr;
   row-gap: 30px;
   column-gap: 30px;
+  padding-left: 15%;
   justify-items: center;
 }
 
 @media (max-width: 1200px) {
   .MainSection {
     width: 100vw;
+    padding-left: 0;
     column-gap: 5px;
   }
 }
 @media (max-width: 830px) {
   .MainSection {
     width: 100vw;
-    column-gap: 5px;
+    /* column-gap: 5px; */
     grid-template-columns: 1fr;
     row-gap: 10px;
   }

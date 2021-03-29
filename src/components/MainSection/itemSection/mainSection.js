@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styles from "./mainSection.module.css";
 import { connect } from "react-redux";
 
-import ItemCard from "./ItemCard/itemCard";
+import ItemCard from "../ItemCard/itemCard";
 
 class MainSection extends Component {
   render() {
