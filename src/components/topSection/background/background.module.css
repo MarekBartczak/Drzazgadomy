@@ -38,7 +38,7 @@
   font-size: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 668px) {
   .background {
     /* position: absolute; */
     /* margin-top: 100px; */
@@ -55,7 +55,7 @@
     /* background: none; */
   }
   .nameBox {
-    top: -30vh;
+    top: -50%;
   }
   .name {
     font-size: 25px;
