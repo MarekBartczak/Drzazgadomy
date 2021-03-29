@@ -1,6 +1,6 @@
 .background {
   /* position: relative; */
-  margin-top: 100px;
+  /* margin-top: 100px; */
   background: url("../../../assets/headerBackground/pexels-cleyder-duque-3637789.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -20,10 +20,28 @@
   background: rgba(94, 94, 94, 0.589);
 }
 
+.nameBox {
+  position: relative;
+  top: -60vh;
+  width: 100%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.name {
+  color: white;
+  font-size: 40px;
+}
+.companyText {
+  color: white;
+  font-size: 20px;
+}
+
 @media (max-width: 600px) {
   .background {
     /* position: absolute; */
-    margin-top: 100px;
+    /* margin-top: 100px; */
     background-position: top;
     background-size: cover;
     height: 50vh;
@@ -34,5 +52,15 @@
     width: 100vw;
     height: 50vh;
     background: rgba(94, 94, 94, 0.589);
+    /* background: none; */
+  }
+  .nameBox {
+    top: -30vh;
+  }
+  .name {
+    font-size: 25px;
+  }
+  .companyText {
+    font-size: 15px;
   }
 }

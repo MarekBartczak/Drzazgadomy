@@ -6,6 +6,10 @@ class Background extends Component {
     return (
       <div className={styles.background}>
         <div className={styles.dimm}></div>
+        <div className={styles.nameBox}>
+          <div className={styles.name}>Zajebiste Domy</div>
+          <div className={styles.companyText}>w technologii węgłowej</div>
+        </div>
       </div>
     );
   }
