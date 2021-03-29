@@ -1,13 +1,14 @@
 .shortAboutSection {
-  display: none;
-  position: absolute;
-  top: 100vh;
+  position: relative;
+  top: -200px;
+  padding-top: 50px;
   width: 100vw;
   height: 360px;
-  background: rgb(202, 202, 202);
-  transition: all 0.4s linear;
+  /* background: rgb(202, 202, 202); */
+  /* transition: all 0.4s linear; */
 }
 .about {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,28 +18,17 @@
   font-size: 28px;
 }
 .about p {
-  width: 60%;
-  padding: auto;
-  padding-top: 160px;
+  width: 70%;
   font-family: "Lora", serif;
-  margin: auto;
   font-size: 18px;
-  /* margin-bottom: 50px; */
   text-align: justify;
-  transition: all 0.4s linear;
 }
 .btns {
   position: relative;
-  /* bottom: 100px; */
   margin: auto;
-  /* margin: 20px; */
-  /* width: 800px; */
-  /* height: 400px; */
   margin-top: 20px;
-  /* margin-bottom: 50px; */
   width: 50%;
   bottom: 10px;
-  /* background: red; */
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -78,7 +68,7 @@
     height: 300px;
   }
   .about p {
-    padding-top: 100px;
+    padding-top: 0;
   }
 }
 @media (max-width: 860px) {
@@ -105,10 +95,13 @@
 @media (max-width: 580px) {
   .shortAboutSection {
     /* height: 100%; */
-    top: calc(100vh+300px);
+    top: 0;
+  }
+  .about {
+    padding-top: 0;
   }
   .about p {
-    padding-top: 30px;
+    padding-top: 0;
   }
   .btns {
     flex-direction: column;
