@@ -15,7 +15,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   html {
     transform: rotate(-90deg);
     transform-origin: left top;
@@ -25,4 +25,4 @@ code {
     top: 100%;
     left: 0;
   }
-}
+} */
