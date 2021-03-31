@@ -58,6 +58,8 @@
   font-size: 50px;
   transform: translateX(-200%);
   animation-name: nameSlide;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
   /* animation-delay: 1s; */
   animation-duration: 1s;
   animation-fill-mode: forwards;
