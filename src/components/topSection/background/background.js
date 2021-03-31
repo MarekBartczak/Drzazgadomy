@@ -8,7 +8,9 @@ class Background extends Component {
         <div className={styles.dimm}></div>
         <div className={styles.nameBox}>
           <div className={styles.name}>Domki drewniane</div>
-          <div className={styles.companyText}>w technologii węgłowej</div>
+          <div className={styles.companyText}>
+            dla klientów indywidualnych oraz biznesowych
+          </div>
         </div>
       </div>
     );

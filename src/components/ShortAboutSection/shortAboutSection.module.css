@@ -1,227 +1,82 @@
 .shortAboutSection {
   position: relative;
-  top: -200px;
-  padding-top: 50px;
+  /* top: -200px; */
+  /* padding-top: 150px; */
   width: 100vw;
   height: auto;
   /* background: grey; */
-  padding-bottom: 50px;
-  /* height: 360px; */
-  /* background: rgb(202, 202, 202); */
-  /* transition: all 0.4s linear; */
 }
+
 .about {
-  /* padding-top: 100px; */
   margin: auto;
+  /* background: red; */
   width: 70%;
-  /* height: auto; */
-  color: white;
-  font-size: 28px;
-}
-
-.aboutLineOne,
-.aboutLineTwo,
-.aboutLineThree {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
-  box-shadow: 0 0 10px black;
-  transition: all 0.3s linear;
-}
-
-.aboutText {
-  /* margin: 50px; */
-  width: 50vw;
-  /* padding-right: 50px; */
-  /* padding-left: 50px; */
-  text-align: center;
-  font-size: 24px;
-  margin: 50px;
-  /* border: 1px solid red; */
-  box-sizing: border-box;
-  font-family: "Lora", serif;
-}
-
-.aboutLineTwo .aboutText {
-  color: white;
-}
-
-.imgOne {
-  background: url("../../assets/about/20150917_160854.jpeg");
-  width: 50vw;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  animation-name: aboutPictureOne;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-.imgTwo {
-  background: url("../../assets/about/IMGP0361.jpeg");
-  width: 50vw;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  animation-name: aboutPictureTwo;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-.imgThree {
-  background: url("../../assets/about/SS850606.jpeg");
-  width: 50vw;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  animation-name: aboutPictureThree;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-@keyframes aboutPictureOne {
-  0% {
-    background-size: 100%;
-  }
-  50% {
-    background-size: 110%;
-  }
-  100% {
-    background-size: 100%;
-  }
-}
-@keyframes aboutPictureTwo {
-  0% {
-    background-size: 100%;
-    background-position: center;
-  }
-  50% {
-    background-size: 110%;
-    background-position: bottom;
-  }
-  100% {
-    background-size: 100%;
-    background-position: center;
-  }
-}
-@keyframes aboutPictureThree {
-  0% {
-    background-size: 100%;
-    background-position: center;
-  }
-  50% {
-    background-size: 110%;
-    background-position: left;
-  }
-  75% {
-    background-size: 110%;
-    background-position: right;
-  }
-  100% {
-    background-size: 100%;
-    background-position: center;
-  }
-}
-
-.btns {
-  position: relative;
-  margin: auto;
-  margin-top: 20px;
-  width: 50%;
-  bottom: 10px;
+  /* height: 50vh; */
   display: flex;
   flex-direction: row;
   text-align: center;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
 }
-
-.ourProjects,
-.aboutUs {
+.where,
+.whatWeUse,
+.quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  height: 400px;
   margin: 10px;
-  height: 50px;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  background: rgb(224, 224, 224);
+  /* border: 1px solid red; */
+}
+
+.qualityPic {
+  background: url("../../assets/about/pexels-ivan-samkov-4491846.jpeg");
   width: 250px;
-  color: white;
-  font-size: 18px;
-  font-family: "Lora", serif;
-
-  text-align: center;
-  outline: none;
-  border: none;
-  transition: all 0.4s linear;
+  height: 250px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
 }
-.ourProjects {
-  background: rgb(90, 90, 90);
-}
-.aboutUs {
-  background: rgb(211, 147, 28);
-}
-.ourProjects:hover {
-  background: rgb(29, 29, 29);
-}
-.aboutUs:hover {
-  background: rgb(173, 121, 24);
+.wherePic {
+  background: url("../../assets/about/pexels-anthony-beck-4278035.jpeg");
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
 }
 
-@media (max-width: 1300px) {
-  .shortAboutSection {
-    height: auto;
-  }
+.whatWeUsePic {
+  background: url("../../assets/about/Kiln-dried-wood.jpeg");
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
 }
 
-@media (max-width: 1250px) {
+.whereText,
+.whatWeUseText,
+.qualityText {
+  margin-top: 50px;
+  width: 20vw;
+}
+
+@media (max-width: 1000px) {
   .about {
-    margin: 0;
-  }
-  .aboutLineOne,
-  .aboutLineTwo,
-  .aboutLineThree {
-    flex-direction: column;
-    box-shadow: none;
-    width: 100vw;
-    background: none;
-    margin-top: 0;
-  }
-  .aboutText {
-    width: 100vw;
-    text-align: justify;
-    font-size: 19px;
-    padding: 0 20px;
-  }
-  .aboutLineTwo {
-    flex-direction: column-reverse;
-  }
-
-  .imgOne,
-  .imgTwo,
-  .imgThree {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 90vw;
-  }
-}
-/* @media (max-width: 860px) {
- 
-
-} */
-
-@media (max-width: 580px) {
-  .shortAboutSection {
-    top: 0;
-  }
-  .about {
-    padding-top: 0;
-  }
-
-  .btns {
     flex-direction: column;
   }
-  .ourProjects,
-  .aboutUs {
-    height: 25px;
-    width: 150px;
-    font-size: 14px;
+
+  .whereText,
+  .whatWeUseText,
+  .qualityText {
+    margin-top: 50px;
+    width: auto;
   }
 }
