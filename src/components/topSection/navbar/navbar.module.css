@@ -35,6 +35,7 @@
   margin: 0 10px;
   transition: all 0.2s linear;
 }
+
 .home:hover,
 .about:hover,
 .services:hover,
@@ -42,6 +43,7 @@
   color: rgb(211, 147, 28);
   cursor: pointer;
 }
+
 .phone {
   position: relative;
   top: -200px;
@@ -49,8 +51,6 @@
   height: 100px;
   width: 15%;
   /* background: red; */
-  color: white;
-  font-size: 19px;
 }
 .phoneMobile {
   display: none;
