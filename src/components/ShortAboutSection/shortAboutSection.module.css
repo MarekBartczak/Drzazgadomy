@@ -34,6 +34,30 @@
   background: rgb(224, 224, 224);
   /* border: 1px solid red; */
 }
+.where {
+  animation-name: aboutSlide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateX(-200vw);
+  animation-delay: 0.5s;
+  animation-play-state: paused;
+}
+.whatWeUse {
+  animation-name: aboutSlide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateX(-200vw);
+  animation-delay: 0.3s;
+  animation-play-state: paused;
+}
+.quality {
+  animation-name: aboutSlide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateX(-200vw);
+  animation-delay: 0.1s;
+  animation-play-state: paused;
+}
 
 .qualityPic {
   background: url("../../assets/about/pexels-ivan-samkov-4491846.jpeg");
@@ -43,6 +67,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .wherePic {
   background: url("../../assets/about/pexels-anthony-beck-4278035.jpeg");
   width: 250px;
@@ -59,6 +84,12 @@
   border-radius: 50%;
   background-position: center;
   background-size: cover;
+}
+
+@keyframes aboutSlide {
+  to {
+    transform: translateX(0);
+  }
 }
 
 .whereText,

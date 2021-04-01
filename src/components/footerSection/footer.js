@@ -5,6 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <div className={styles.footer}>
+        <div className={styles.logo}></div>
         <div className={styles.links}>
           <div className={styles.about}>O Firmie</div>
           <a

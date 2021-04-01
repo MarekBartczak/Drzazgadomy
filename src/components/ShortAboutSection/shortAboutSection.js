@@ -3,19 +3,52 @@ import styles from "./shortAboutSection.module.css";
 import Aux from "../../hoc/aux";
 
 class ShortAboutSection extends Component {
+  // onScrollFunc = () => {
+  //   const scroll = this.whereElementRef;
+  // };
+  // aboutSlide
+
+  state = {
+    animation: "paused",
+  };
+
+  componentDidMount() {
+    window.addEventListener("scroll", () => {
+      console.log(document.documentElement.scrollTop);
+      if (document.documentElement.scrollTop > 200) {
+        this.setState({ animation: "running" });
+      }
+    });
+  }
+
   render() {
+    // console.log(window);
+    // console.log(document.documentElement.scrollTop);
+    console.log(this.state.animation);
     return (
       <Aux>
-        <div className={styles.shortAboutSection}>
+        <div
+          className={styles.shortAboutSection}
+          ref={(n) => {
+            this.whereElementRef = n;
+            // console.log(this.whereElementRef.getBoundingClientRect());
+          }}
+        >
           <div className={styles.about}>
-            <div className={styles.where}>
+            <div
+              className={styles.where}
+              style={{ animationPlayState: this.state.animation }}
+            >
               <div className={styles.wherePic}></div>
               <div className={styles.whereText}>
                 Wykonujemy zamówienia na terenie całej Polski oraz za granicą
               </div>
             </div>
 
-            <div className={styles.whatWeUse}>
+            <div
+              className={styles.whatWeUse}
+              style={{ animationPlayState: this.state.animation }}
+            >
               <div className={styles.whatWeUsePic}></div>
               <div className={styles.whatWeUseText}>
                 Używamy drewna suszonego komorowo, impregnowanego o odpowiedniej
@@ -23,7 +56,10 @@ class ShortAboutSection extends Component {
               </div>
             </div>
 
-            <div className={styles.quality}>
+            <div
+              className={styles.quality}
+              style={{ animationPlayState: this.state.animation }}
+            >
               <div className={styles.qualityPic}></div>
               <div className={styles.qualityText}>
                 Podstawą w naszej firmie jest jakość i dbałość o szczegóły,
