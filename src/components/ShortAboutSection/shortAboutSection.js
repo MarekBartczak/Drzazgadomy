@@ -14,24 +14,25 @@ class ShortAboutSection extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", () => {
-      console.log(document.documentElement.scrollTop);
-      if (document.documentElement.scrollTop > 200) {
+      // console.log(
+      //   document.documentElement.scrollHeight -
+      //     document.documentElement.scrollTop
+      // );
+      if (document.documentElement.scrollTop > 100) {
         this.setState({ animation: "running" });
       }
     });
+    // console.log(this.whereElementRef.offsetHeight);
   }
 
   render() {
-    // console.log(window);
-    // console.log(document.documentElement.scrollTop);
-    console.log(this.state.animation);
+    // console.log(this.state.animation);
     return (
       <Aux>
         <div
           className={styles.shortAboutSection}
           ref={(n) => {
             this.whereElementRef = n;
-            // console.log(this.whereElementRef.getBoundingClientRect());
           }}
         >
           <div className={styles.about}>
