@@ -50,12 +50,12 @@
   position: absolute;
   height: calc(100%);
   border-radius: 20px 20px 0 0;
-  background: rgba(255, 255, 255, 0.425);
+  background: rgba(102, 102, 102, 0.425);
   padding-left: 10px;
   padding-right: 10px;
   top: -50px;
   left: 60vw;
-  color: rgb(119, 119, 119);
+  color: rgb(248, 248, 248);
   font-weight: 900;
   box-shadow: 0 0 20px black;
   font-size: 70px;
@@ -82,22 +82,22 @@
   left: calc(15% + 40px);
   height: 0;
   width: 0;
-  border-left: 700px solid rgb(80, 80, 80);
+  border-left: 700px solid gold;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   animation-name: lineColor;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 @keyframes lineColor {
   0% {
-    border-left: 700px solid rgb(80, 80, 80);
+    border-left: 700px solid gold;
   }
   50% {
-    border-left: 700px solid rgb(202, 202, 202);
+    border-left: 700px solid rgb(82, 67, 20);
   }
   100% {
-    border-left: 700px solid rgb(80, 80, 80);
+    border-left: 700px solid gold;
   }
 }
 
@@ -106,21 +106,21 @@
   top: 550px;
   left: calc(-5%);
   height: 3px;
-  width: 600px;
-  background: rgb(80, 80, 80);
+  width: 350px;
+  background: gold;
   animation-name: lineBottomColor;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 @keyframes lineBottomColor {
   0% {
-    background: rgb(202, 202, 202);
+    background: rgb(82, 67, 20);
   }
   50% {
-    background: rgb(80, 80, 80);
+    background: gold;
   }
   100% {
-    background: rgb(202, 202, 202);
+    background: rgb(82, 67, 20);
   }
 }
 
@@ -145,14 +145,14 @@
 
 .header {
   position: absolute;
-  top: -45px;
-  left: calc(-5%);
+  top: -120px;
+  left: calc(-15%);
   /* background: rgba(153, 153, 153, 0.76); */
-  box-shadow: 0 0 20px black;
+  /* box-shadow: 0 0 20px black; */
   width: 400px;
   text-align: center;
-  border-radius: 20px 20px 20px 20px;
-  color: rgb(94, 94, 94);
+  border-radius: 20px;
+  color: rgb(236, 236, 236);
   font-weight: bold;
   font-size: 40px;
   padding: 0 5px;
@@ -167,19 +167,23 @@
   position: relative;
   top: 100px;
   height: 350px;
-  left: 50x;
-  width: 300px;
-  color: black;
+  left: -200px;
+  width: 500px;
+  color: rgb(236, 236, 236);
   padding: 0 5px;
-  font-size: 13px;
-  text-align: justify;
-  border-radius: 10px;
-  padding: 10px;
-  background: rgba(216, 216, 216, 0.63);
+  font-size: 20px;
+  text-align: right;
+  /* border-radius: 10px; */
+  padding: 20px;
+  /* border: 1px solid white; */
+  /* padding-top: 20px; */
+  /* background: rgba(43, 43, 43, 0.466); */
+
+  /* background: rgba(216, 216, 216, 0.63); */
 
   font-family: "Lora", serif;
   transition: all 0.2s linear;
-  box-shadow: 0 0 10px black;
+  /* box-shadow: 0 0 10px black; */
 
   /* padding-bottom: 10px; */
 }
