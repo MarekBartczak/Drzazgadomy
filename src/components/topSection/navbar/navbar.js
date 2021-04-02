@@ -11,7 +11,7 @@ class Navbar extends Component {
         <div className={styles.nav}>
           <div className={styles.home}>Strona Główna</div>
           <div className={styles.about}>O Firmie</div>
-          <div className={styles.services}>Usługi</div>
+          <div className={styles.services}>Projekty</div>
           <div className={styles.contactUs}>Napisz do nas</div>
         </div>
         <div className={styles.phoneMobile}>

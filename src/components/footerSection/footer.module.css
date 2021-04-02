@@ -12,12 +12,12 @@
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .links {
   /* margin: auto; */
-  width: 50vw;
+  width: auto;
   margin-left: 200px;
   height: 200px;
   /* border: 1px solid green; */
@@ -49,8 +49,10 @@
 }
 
 .logo {
+  /* border: 1px solid red; */
   width: 400px;
   height: 400px;
+  margin-left: 10vw;
   /* margin-left: 50px; */
   /* border: 1px solid red; */
 
@@ -68,5 +70,13 @@
   }
   .footer {
     flex-direction: column;
+  }
+  .logo {
+    margin-left: 0;
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    height: 100vh;
   }
 }

@@ -1,45 +1,77 @@
 import React, { Component } from "react";
 import styles from "./mainSection.module.css";
 import { connect } from "react-redux";
+import Aux from "../../../hoc/aux";
 
 import ItemCard from "../ItemCard/itemCard";
 
 class MainSection extends Component {
+  state = {
+    animation: "paused",
+    animation1: "paused",
+    animation2: "paused",
+    animation3: "paused",
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", () => {
+      // console.log(
+      //   document.documentElement.scrollHeight -
+      //     document.documentElement.scrollTop
+      // );
+      let scroll = document.documentElement.scrollTop;
+      // console.log(scroll);
+      if (scroll > 900) {
+        this.setState({ animation: "running" });
+      }
+      if (scroll > 1800) {
+        this.setState({ animation1: "running" });
+      }
+      if (scroll > 2600) {
+        this.setState({ animation2: "running" });
+      }
+      if (scroll > 3400) {
+        this.setState({ animation3: "running" });
+      }
+    });
+    // console.log(this.whereElementRef.offsetHeight);
+  }
+
   render() {
-    // console.log(this.props.items[0]);
     return (
-      <div className={styles.MainSection}>
-        <ItemCard
-          ItemCardPictureUrl={this.props.items[0].picUrl}
-          ItemCardHeader={this.props.items[0].header}
-          ItemCardDescription={this.props.items[0].description}
-        />
-        <ItemCard
-          ItemCardPictureUrl={this.props.items[1].picUrl}
-          ItemCardHeader={this.props.items[1].header}
-          ItemCardDescription={this.props.items[1].description}
-        />
-        <ItemCard
-          ItemCardPictureUrl={this.props.items[2].picUrl}
-          ItemCardHeader={this.props.items[2].header}
-          ItemCardDescription={this.props.items[2].description}
-        />
-        <ItemCard
-          ItemCardPictureUrl={this.props.items[3].picUrl}
-          ItemCardHeader={this.props.items[3].header}
-          ItemCardDescription={this.props.items[3].description}
-        />
-        <ItemCard
-          ItemCardPictureUrl={this.props.items[4].picUrl}
-          ItemCardHeader={this.props.items[4].header}
-          ItemCardDescription={this.props.items[4].description}
-        />
-        <ItemCard
-          ItemCardPictureUrl={this.props.items[5].picUrl}
-          ItemCardHeader={this.props.items[5].header}
-          ItemCardDescription={this.props.items[5].description}
-        />
-      </div>
+      <Aux>
+        <div className={styles.offerTitle}>Oferta</div>
+        <div className={styles.MainSection}>
+          <ItemCard
+            animation={this.state.animation}
+            number={this.props.items[0].number}
+            ItemCardPictureUrl={this.props.items[0].picUrl}
+            ItemCardHeader={this.props.items[0].header}
+            ItemCardDescription={this.props.items[0].description}
+          />
+          <ItemCard
+            animation={this.state.animation1}
+            number={this.props.items[1].number}
+            ItemCardPictureUrl={this.props.items[1].picUrl}
+            ItemCardHeader={this.props.items[1].header}
+            ItemCardDescription={this.props.items[1].description}
+          />
+
+          <ItemCard
+            animation={this.state.animation2}
+            number={this.props.items[2].number}
+            ItemCardPictureUrl={this.props.items[2].picUrl}
+            ItemCardHeader={this.props.items[2].header}
+            ItemCardDescription={this.props.items[2].description}
+          />
+          <ItemCard
+            animation={this.state.animation3}
+            number={this.props.items[3].number}
+            ItemCardPictureUrl={this.props.items[3].picUrl}
+            ItemCardHeader={this.props.items[3].header}
+            ItemCardDescription={this.props.items[3].description}
+          />
+        </div>
+      </Aux>
     );
   }
 }
