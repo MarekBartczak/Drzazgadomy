@@ -4,6 +4,7 @@
   /* padding-top: 150px; */
   width: 100vw;
   height: auto;
+
   /* background: grey; */
 }
 
@@ -29,11 +30,14 @@
   padding: 20px;
   height: 400px;
   margin: 10px;
+  color: white;
   /* box-shadow: 0 0 10px white; */
-  border-radius: 10px;
-  background: rgb(224, 224, 224);
+  /* border-radius: 10px; */
+  background: rgb(83, 83, 83);
   /* border: 1px solid red; */
+  transition: all 0.3s linear;
 }
+
 .where {
   animation-name: aboutSlide;
   animation-duration: 1s;
@@ -102,12 +106,14 @@
 @media (max-width: 1000px) {
   .about {
     flex-direction: column;
+    width: 90vw;
+    /* margin: 0; */
   }
 
   .whereText,
   .whatWeUseText,
   .qualityText {
     margin-top: 50px;
-    width: auto;
+    width: 90vw;
   }
 }
