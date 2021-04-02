@@ -79,4 +79,7 @@
   .footer {
     height: 100vh;
   }
+  .logo {
+    width: 100vw;
+  }
 }
