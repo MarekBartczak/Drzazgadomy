@@ -13,10 +13,12 @@ class CallRequestForm extends Component {
 
         <div className={styles.form}>
           <input
+            type="text"
             className={styles.callRequestName}
             placeholder={"Imię"}
           ></input>
           <input
+            type="text"
             className={styles.callRequestPhone}
             placeholder={"Nr telefonu"}
           ></input>

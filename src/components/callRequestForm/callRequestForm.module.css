@@ -204,3 +204,11 @@
     font-size: 12px;
   }
 }
+
+input[type="text"] {
+  font-size: inherit;
+}
+
+select {
+  font-size: inherit;
+}
