@@ -1,18 +1,12 @@
 .shortAboutSection {
   position: relative;
-  /* top: -200px; */
-  /* padding-top: 150px; */
   width: 100vw;
   height: auto;
-
-  /* background: grey; */
 }
 
 .about {
   margin: auto;
-  /* background: red; */
   width: 70%;
-  /* height: 50vh; */
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -31,10 +25,7 @@
   height: 400px;
   margin: 10px;
   color: white;
-  /* box-shadow: 0 0 10px white; */
-  /* border-radius: 10px; */
   background: rgb(83, 83, 83);
-  /* border: 1px solid red; */
   transition: all 0.3s linear;
 }
 
@@ -106,7 +97,7 @@
 @media (max-width: 1000px) {
   .about {
     flex-direction: column;
-    width: 90vw;
+    width: 100vw;
     margin-left: 0;
     margin-right: 0;
   }
@@ -114,8 +105,14 @@
   .whereText,
   .whatWeUseText,
   .qualityText {
-    margin: 0;
-    margin-top: 50px;
-    width: 90vw;
+    width: 100vw;
+  }
+  .where,
+  .whatWeUse,
+  .quality {
+    transform: translateX(0);
+    animation-name: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
