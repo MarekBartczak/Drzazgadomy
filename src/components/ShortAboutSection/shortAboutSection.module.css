@@ -97,15 +97,15 @@
 @media (max-width: 1000px) {
   .about {
     flex-direction: column;
-    width: 100vw;
-    margin-left: 0;
-    margin-right: 0;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 
   .whereText,
   .whatWeUseText,
   .qualityText {
-    width: 100vw;
+    width: 90vw;
   }
   .where,
   .whatWeUse,
