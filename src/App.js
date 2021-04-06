@@ -18,7 +18,7 @@ class App extends Component {
         <ShortAboutSection />
         {/* <ShortAboutSection /> */}
         <Items />
-        <Gallery />
+        {/* <Gallery /> */}
         <Footer />
       </Aux>
     );

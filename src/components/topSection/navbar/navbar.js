@@ -12,7 +12,8 @@ class Navbar extends Component {
           <div className={styles.home}>Strona Główna</div>
           <div className={styles.about}>O Firmie</div>
           <div className={styles.services}>Oferta</div>
-          <div className={styles.contactUs}>Galeria</div>
+          <div className={styles.howWebuild}>Etapy Budowy</div>
+          {/* <div className={styles.contactUs}>Galeria</div> */}
         </div>
         <div className={styles.phoneMobile}>
           <a href="tel:+48342234345">

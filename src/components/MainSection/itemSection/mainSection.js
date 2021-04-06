@@ -46,14 +46,22 @@ class MainSection extends Component {
             number={this.props.items[0].number}
             ItemCardPictureUrl={this.props.items[0].picUrl}
             ItemCardHeader={this.props.items[0].header}
-            ItemCardDescription={this.props.items[0].description}
+            size={this.props.items[0].description.size}
+            price={this.props.items[0].description.price}
+            include={this.props.items[0].description.include}
+            side1={this.props.items[0].side1Url}
+            side2={this.props.items[0].side2Url}
           />
           <ItemCard
             animation={this.state.animation1}
             number={this.props.items[1].number}
             ItemCardPictureUrl={this.props.items[1].picUrl}
             ItemCardHeader={this.props.items[1].header}
-            ItemCardDescription={this.props.items[1].description}
+            size={this.props.items[1].description.size}
+            price={this.props.items[1].description.price}
+            include={this.props.items[1].description.include}
+            side1={this.props.items[1].side1Url}
+            side2={this.props.items[1].side2Url}
           />
 
           <ItemCard
@@ -61,14 +69,22 @@ class MainSection extends Component {
             number={this.props.items[2].number}
             ItemCardPictureUrl={this.props.items[2].picUrl}
             ItemCardHeader={this.props.items[2].header}
-            ItemCardDescription={this.props.items[2].description}
+            size={this.props.items[2].description.size}
+            price={this.props.items[2].description.price}
+            include={this.props.items[2].description.include}
+            side1={this.props.items[2].side1Url}
+            side2={this.props.items[2].side2Url}
           />
           <ItemCard
             animation={this.state.animation3}
             number={this.props.items[3].number}
             ItemCardPictureUrl={this.props.items[3].picUrl}
             ItemCardHeader={this.props.items[3].header}
-            ItemCardDescription={this.props.items[3].description}
+            size={this.props.items[3].description.size}
+            price={this.props.items[3].description.price}
+            include={this.props.items[3].description.include}
+            side1={this.props.items[3].side1Url}
+            side2={this.props.items[3].side2Url}
           />
         </div>
       </Aux>

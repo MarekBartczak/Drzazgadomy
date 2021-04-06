@@ -5,10 +5,11 @@ import Aux from "../../../hoc/aux";
 
 class Gallery extends Component {
   render() {
-    console.log(process.env.PUBLIC_URL);
+    console.log(window.location.origin);
     return (
       <Aux>
         <div className={styles.gallery}>some pictures</div>
+        <img src={"./assets/offer/DM01/20150403_161445.jpeg"} alt="pic" />
         {/* {pictures.map(({ id, src, title, description }) => (
           <img key={id} src={src} title={title} alt={description} />
         ))} */}

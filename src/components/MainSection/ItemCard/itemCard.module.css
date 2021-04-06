@@ -3,13 +3,14 @@
   /* width: 100%; */
   height: 600px;
   width: 70vw;
+  /* border-left: 1px solid gold; */
   /* background: red; */
   /* padding: 10px; */
   /* margin: 10px; */
   transition: all 0.2s linear;
   display: flex;
   flex-direction: row;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transform: translateX(-200vw);
   animation-name: offerSlide;
   animation-fill-mode: forwards;
@@ -127,7 +128,7 @@
 .pic {
   position: absolute;
   top: 0;
-  left: 30%;
+  left: 35%;
   width: 70%;
   height: 600px;
   /* border: 1px solid red; */
@@ -138,15 +139,49 @@
   padding: 0px;
   /* border-radius: 10px; */
   /* border: 1px solid black; */
-  transition: all 0.5s linear;
+  /* transition: all 2s linear; */
   box-shadow: 0 0 10px black;
   z-index: -100;
 }
 
+.smallPicBox {
+  background: inherit;
+  /* border: 1px solid red; */
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 300px;
+  /* width: 300px; */
+  left: calc(0px - 200px);
+}
+
+.smallPic {
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
+}
+@media (max-width: 1300px) {
+  .smallPicBox {
+    top: 350px;
+    left: calc(0px - 150px);
+  }
+  .smallPic {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 1100px) {
+  .pic {
+    left: 40%;
+  }
+}
 .header {
   position: absolute;
   top: -120px;
-  left: calc(-15%);
+  left: -15vw;
   /* background: rgba(153, 153, 153, 0.76); */
   /* box-shadow: 0 0 20px black; */
   width: 400px;
@@ -167,12 +202,12 @@
   position: relative;
   top: 100px;
   height: 350px;
-  left: -200px;
-  width: 500px;
+  left: -15vw;
+  width: 30vw;
   color: rgb(236, 236, 236);
   padding: 0 5px;
   font-size: 20px;
-  text-align: right;
+  text-align: left;
   /* border-radius: 10px; */
   padding: 20px;
 
@@ -222,6 +257,23 @@
     height: 60vh;
     left: 0;
   }
+
+  .smallPicBox {
+    width: 100vw;
+    position: absolute;
+    /* left: 0; */
+    left: 0;
+    margin: auto;
+    /* border: 1px solid red; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 60vh;
+  }
+  .smallPic {
+    width: calc(50vw - 20px);
+    height: 200px;
+  }
   .number {
     left: 70vw;
     height: 60vh;
@@ -233,13 +285,25 @@
     /* padding-left: 5px; */
     width: 100vw;
     bottom: 0;
-    top: 60vh;
+    top: calc(60vh + 200px);
     padding-top: 5vh;
     left: 0;
     font-size: 20px;
-    background: rgba(36, 36, 36, 0.363);
   }
   .lineBottom {
-    top: 100vh;
+    width: 100vw;
+    top: calc(60vh + 200px + 20px + 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .smallPic {
+    height: 100px;
+  }
+  .lineBottom {
+    top: calc(60vh + 100px + 20px + 20px);
+  }
+  .info {
+    top: calc(60vh + 100px);
   }
 }
