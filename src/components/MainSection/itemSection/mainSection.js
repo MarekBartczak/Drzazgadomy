@@ -33,7 +33,6 @@ class MainSection extends Component {
         this.setState({ animation3: "running" });
       }
     });
-    // console.log(this.whereElementRef.offsetHeight);
   }
 
   render() {
@@ -42,6 +41,7 @@ class MainSection extends Component {
         <div className={styles.offerTitle}>Oferta</div>
         <div className={styles.MainSection}>
           <ItemCard
+            ref={(el) => (this.showEl = el)}
             animation={this.state.animation}
             number={this.props.items[0].number}
             ItemCardPictureUrl={this.props.items[0].picUrl}

@@ -3,6 +3,10 @@ import styles from "./navbar.module.css";
 import Hamburger from "../hamburger/hamburger";
 
 class Navbar extends Component {
+  scrollTo = (e) => {
+    e.preventDefault();
+  };
+
   render() {
     return (
       <div className={styles.navbar}>
@@ -11,7 +15,9 @@ class Navbar extends Component {
         <div className={styles.nav}>
           <div className={styles.home}>Strona Główna</div>
           <div className={styles.about}>O Firmie</div>
-          <div className={styles.services}>Oferta</div>
+          <div className={styles.offer} onClick={this.scrollTo}>
+            Oferta
+          </div>
           <div className={styles.howWebuild}>Etapy Budowy</div>
           {/* <div className={styles.contactUs}>Galeria</div> */}
         </div>

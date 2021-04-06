@@ -28,7 +28,7 @@
 
 .home,
 .about,
-.services,
+.offer,
 .howWebuild,
 .contactUs {
   font-size: 19px;
@@ -39,7 +39,7 @@
 
 .home:hover,
 .about:hover,
-.services:hover,
+.offer:hover,
 .howWebuild:hover,
 .contactUs:hover {
   color: rgb(211, 147, 28);
@@ -93,6 +93,10 @@ a {
   cursor: pointer;
 }
 @media (max-width: 1100px) {
+  .navbar {
+    position: fixed;
+    z-index: 5000;
+  }
   .phoneMobile {
     display: block;
   }
