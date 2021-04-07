@@ -69,6 +69,18 @@ const initialState = {
     offerTop: 0,
     shortAboutTop: 0,
     home: 0,
+    howWeBuild: 0,
+  },
+  howWeBuild: {
+    picturesUrl: [
+      "./assets/howWeBuild/00.jpeg",
+      "./assets/howWeBuild/01.jpeg",
+      "./assets/howWeBuild/02.jpeg",
+      "./assets/howWeBuild/03.jpeg",
+      "./assets/howWeBuild/04.jpeg",
+      "./assets/howWeBuild/05.jpeg",
+      "./assets/howWeBuild/06.jpeg",
+    ],
   },
 };
 
@@ -103,6 +115,15 @@ const reducer = (state = initialState, action) => {
         componentsTop: {
           ...state.componentsTop,
           shortAboutTop: action.saveTop,
+        },
+      };
+    }
+    case actionsTypes.SAVE_HOW_WE_BUILD_TOP: {
+      return {
+        ...state,
+        componentsTop: {
+          ...state.componentsTop,
+          howWeBuild: action.saveTop,
         },
       };
     }

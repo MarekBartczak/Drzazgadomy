@@ -1,0 +1,146 @@
+.howWeBuild {
+  width: 70vw;
+  /* background: red; */
+  height: 80vh;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+.title {
+  position: relative;
+  top: -10vh;
+  font-size: 60px;
+  color: white;
+  font-weight: 800;
+}
+.mainPic {
+  position: relative;
+  top: -5%;
+  margin: auto;
+  height: 90%;
+  width: 90%;
+  /* border: 1px solid white; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.arrowRight {
+  /* background: green; */
+  position: relative;
+  left: 0;
+  height: 200px;
+  width: 100px;
+  transition: all 0.3s linear;
+}
+.arrowRight:hover {
+  animation-name: rightArrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+i {
+  color: white;
+}
+
+.arrowLeft {
+  /* background: green; */
+  position: relative;
+  left: 0;
+  height: 200px;
+  width: 100px;
+  transition: all 0.3s linear;
+}
+
+.arrowLeft:hover {
+  animation-name: leftArrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leftArrow {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: -2px;
+  }
+  20% {
+    left: -4px;
+  }
+  30% {
+    left: -6px;
+  }
+  40% {
+    left: -8px;
+  }
+  50% {
+    left: -10px;
+  }
+  60% {
+    left: -8px;
+  }
+  70% {
+    left: -6px;
+  }
+  80% {
+    left: -4px;
+  }
+  90% {
+    left: -2px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes rightArrow {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 2px;
+  }
+  20% {
+    left: 4px;
+  }
+  30% {
+    left: 6px;
+  }
+  40% {
+    left: 8px;
+  }
+  50% {
+    left: 10px;
+  }
+  60% {
+    left: 8px;
+  }
+  70% {
+    left: 6px;
+  }
+  80% {
+    left: 4px;
+  }
+  90% {
+    left: 2px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 25px;
+  }
+  .howWeBuild {
+    width: 100vw;
+    margin-bottom: 100px;
+  }
+  .mainPic {
+    width: 100vw;
+  }
+}

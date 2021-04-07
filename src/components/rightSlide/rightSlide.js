@@ -45,7 +45,13 @@ class RightSlie extends Component {
             {" "}
             Oferta
           </div>
-          <div className={styles.buildSteps}> Etapy Budowy</div>
+          <div
+            className={styles.buildSteps}
+            onClick={() => this.scrollTo("howWeBuild")}
+          >
+            {" "}
+            Etapy Budowy
+          </div>
         </div>
       </div>
     );

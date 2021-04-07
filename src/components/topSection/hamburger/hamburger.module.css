@@ -75,6 +75,9 @@
 }
 
 @media (min-width: 1100px) {
+  .hamburgerBox {
+    display: none;
+  }
   .hamburger {
     display: none;
   }

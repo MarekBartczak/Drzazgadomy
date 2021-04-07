@@ -34,7 +34,12 @@ class Navbar extends Component {
           >
             Oferta
           </div>
-          <div className={styles.howWebuild}>Etapy Budowy</div>
+          <div
+            className={styles.howWebuild}
+            onClick={() => this.scrollTo("howWeBuild")}
+          >
+            Etapy Budowy
+          </div>
           {/* <div className={styles.contactUs}>Galeria</div> */}
         </div>
         <div className={styles.phoneMobile}>

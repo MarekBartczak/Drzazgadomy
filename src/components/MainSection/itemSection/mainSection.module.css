@@ -8,7 +8,7 @@
   /* margin-left: 15%; */
   display: grid;
   /* display: none; */
-  margin-top: 25px;
+  margin-top: 200px;
   grid-template-columns: 1fr;
   row-gap: 30px;
   column-gap: 30px;
