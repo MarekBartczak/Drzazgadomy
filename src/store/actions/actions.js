@@ -1,3 +1,6 @@
 export const GET_ITEM = "GET_ITEM";
 
 export const HAMBURGER_MENU_TOGGLE = "HAMBURGER_MENU_TOGGLE";
+
+export const SAVE_OFFER_TOP = "SAVE_OFFER_TOP";
+export const SAVE_SHORT_ABOUT_TOP = "SAVE_SHORT_ABOUT_TOP";

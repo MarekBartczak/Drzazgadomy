@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styles from "./shortAboutSection.module.css";
 import Aux from "../../hoc/aux";
+import * as actionsTypes from "../../store/actions/actions";
+import { connect } from "react-redux";
 
 class ShortAboutSection extends Component {
   // onScrollFunc = () => {
@@ -22,6 +24,7 @@ class ShortAboutSection extends Component {
         this.setState({ animation: "running" });
       }
     });
+    this.props.onSaveoffsetTop(this.shortAbout.offsetTop);
     // console.log(this.whereElementRef.offsetHeight);
   }
 
@@ -32,7 +35,7 @@ class ShortAboutSection extends Component {
         <div
           className={styles.shortAboutSection}
           ref={(n) => {
-            this.whereElementRef = n;
+            this.shortAbout = n;
           }}
         >
           <div className={styles.about}>
@@ -74,7 +77,19 @@ class ShortAboutSection extends Component {
   }
 }
 
-export default ShortAboutSection;
+const mapStateToProps = (state) => {
+  return {
+    ...state,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSaveoffsetTop: (top) =>
+      dispatch({ type: actionsTypes.SAVE_SHORT_ABOUT_TOP, saveTop: top }),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ShortAboutSection);
 
 /* <div className={styles.aboutText}>
     Nasze domki drewniane wykonujemy z balika świerkowego lub

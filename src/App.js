@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+
 import Aux from "./hoc/aux";
 
+import BackDrop from "./components/backDrop/backDrop";
 import NavBar from "./components/topSection/navbar/navbar";
 import Background from "./components/topSection/background/background";
 import ShortAboutSection from "./components/ShortAboutSection/shortAboutSection";
@@ -12,6 +15,8 @@ class App extends Component {
   render() {
     return (
       <Aux>
+        {!this.props.hamburgerMenu.isClose ? <BackDrop /> : null}
+
         <NavBar />
         <Background />
         <CallRequestForm />
@@ -25,4 +30,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    ...state,
+  };
+};
+
+export default connect(mapStateToProps, null)(App);

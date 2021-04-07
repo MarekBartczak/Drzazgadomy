@@ -22,7 +22,7 @@ class Hamburger extends Component {
       >
         <div
           className={
-            this.props.hamburgerMenu.isClose
+            !this.props.hamburgerMenu.isClose
               ? styles.hamburgerOpen
               : styles.hamburger
           }

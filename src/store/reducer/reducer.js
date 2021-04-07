@@ -63,7 +63,12 @@ const initialState = {
     },
   ],
   hamburgerMenu: {
-    isClose: false,
+    isClose: true,
+  },
+  componentsTop: {
+    offerTop: 0,
+    shortAboutTop: 0,
+    home: 0,
   },
 };
 
@@ -82,6 +87,26 @@ const reducer = (state = initialState, action) => {
           isClose: !state.hamburgerMenu.isClose,
         },
       };
+
+    case actionsTypes.SAVE_OFFER_TOP: {
+      return {
+        ...state,
+        componentsTop: {
+          ...state.componentsTop,
+          offerTop: action.saveTop,
+        },
+      };
+    }
+    case actionsTypes.SAVE_SHORT_ABOUT_TOP: {
+      return {
+        ...state,
+        componentsTop: {
+          ...state.componentsTop,
+          shortAboutTop: action.saveTop,
+        },
+      };
+    }
+
     default:
       return state;
   }

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styles from "./mainSection.module.css";
 import { connect } from "react-redux";
 import Aux from "../../../hoc/aux";
-
+import * as actionsTypes from "../../../store/actions/actions";
 import ItemCard from "../ItemCard/itemCard";
 
 class MainSection extends Component {
@@ -33,12 +33,15 @@ class MainSection extends Component {
         this.setState({ animation3: "running" });
       }
     });
+    this.props.onSaveoffsetTop(this.offerRef.offsetTop + 100);
   }
 
   render() {
     return (
       <Aux>
-        <div className={styles.offerTitle}>Oferta</div>
+        <div className={styles.offerTitle} ref={(e) => (this.offerRef = e)}>
+          Oferta
+        </div>
         <div className={styles.MainSection}>
           <ItemCard
             ref={(el) => (this.showEl = el)}
@@ -97,5 +100,11 @@ const mapStateToProps = (state) => {
     ...state,
   };
 };
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSaveoffsetTop: (top) =>
+      dispatch({ type: actionsTypes.SAVE_OFFER_TOP, saveTop: top }),
+  };
+};
 
-export default connect(mapStateToProps, null)(MainSection);
+export default connect(mapStateToProps, mapDispatchToProps)(MainSection);

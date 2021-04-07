@@ -1,0 +1,50 @@
+.rightSlide {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.74);
+  width: 50vw;
+  top: 0;
+  right: 0;
+  color: white;
+  z-index: 900;
+  height: 100vh;
+  transition: all 0.3s linear;
+}
+.links {
+  margin-left: 20%;
+  text-align: left;
+  margin-top: 100px;
+}
+.home,
+.shortAbout,
+.offer,
+.buildSteps {
+  margin-top: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.home:hover,
+.shortAbout:hover,
+.offer:hover,
+.buildSteps:hover {
+  color: rgb(211, 147, 28);
+}
+
+.close {
+  transform: translateX(50vw);
+}
+
+.open {
+  transform: translateX(0);
+}
+
+@media (max-width: 500px) {
+  .home,
+  .shortAbout,
+  .offer,
+  .buildSteps {
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}
