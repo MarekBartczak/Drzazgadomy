@@ -22,12 +22,14 @@ class CallRequestForm extends Component {
       phone_number_client: this.state.phone,
     };
 
-    emailjs.send(
-      "service_y6p8h4i",
-      "template_ttzid8a",
-      templateParams,
-      "user_8M89hEsl6TJjpKWX3rQDS"
-    );
+    emailjs
+      .send(
+        "service_y6p8h4i",
+        "template_ttzid8a",
+        templateParams,
+        "user_8M89hEsl6TJjpKWX3rQDS"
+      )
+      .then(() => alert("Wiadomość zostala wysłana"));
     this.resetForm();
   };
   resetForm = () => {
