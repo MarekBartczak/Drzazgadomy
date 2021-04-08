@@ -152,6 +152,7 @@
     height: auto;
     width: 100%;
     margin: 0;
+    top: 0;
     background: rgb(90, 90, 90);
 
     /* top: 50vh; */
