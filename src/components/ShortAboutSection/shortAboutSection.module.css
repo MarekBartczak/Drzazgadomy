@@ -25,7 +25,7 @@
   padding: 20px;
   height: 400px;
   margin: 10px;
-  color: white;
+  color: rgb(211, 211, 211);
   background: rgb(83, 83, 83);
   transition: all 0.3s linear;
 }
@@ -53,6 +53,28 @@
   transform: translateX(-200vw);
   animation-delay: 0.1s;
   animation-play-state: paused;
+}
+.text {
+  color: rgb(211, 211, 211);
+  font-size: 17px;
+  width: calc(70vw + 40px);
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+  animation-name: aboutSlide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateX(-200vw);
+  animation-delay: 0.7s;
+  animation-play-state: paused;
+  background: rgba(0, 0, 0, 0.267);
+  padding: 40px;
+}
+.title {
+  color: rgb(211, 211, 211);
+  font-size: 40px;
+  margin-left: 15vw;
 }
 
 .qualityPic {

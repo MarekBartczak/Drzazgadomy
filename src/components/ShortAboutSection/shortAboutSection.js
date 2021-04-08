@@ -27,7 +27,9 @@ class ShortAboutSection extends Component {
     this.props.onSaveoffsetTop(this.shortAbout.offsetTop);
     // console.log(this.whereElementRef.offsetHeight);
   }
+  /* 
 
+</div> */
   render() {
     // console.log(this.state.animation);
     return (
@@ -38,6 +40,8 @@ class ShortAboutSection extends Component {
             this.shortAbout = n;
           }}
         >
+          {" "}
+          <div className={styles.title}>O Firmie</div>
           <div className={styles.about}>
             <div
               className={styles.where}
@@ -71,6 +75,24 @@ class ShortAboutSection extends Component {
               </div>
             </div>
           </div>
+          <div
+            className={styles.text}
+            style={{ animationPlayState: this.state.animation }}
+          >
+            Jesteśmy firmą w której tradycja i nowoczesność wzajemnie się
+            uzupełniają.
+            <br /> Nieustannie podążamy za nowymi rozwiązaniami
+            technologicznymi, jednocześnie zachowując tradycyjne podejście
+            ciesielskie, wykorzystywane w naszych realizacjach.
+            <br /> Powierzając nam określone zadanie możecie mieć Państwo
+            pewność, że zostanie ono wykonane z należytą dbałością przez
+            wysokiej klasy fachowców.
+            <br />
+            Stale podnosimy kwalifikacje naszych pracowników, którzy swoim
+            doświadczeniem, zdobytym na rynkach skandynawskich, francuskim i
+            niemieckim, są jednymi z najlepszych w kraju w dziedzinie
+            konstrukcji drewnianych.
+          </div>
         </div>
       </Aux>
     );
@@ -90,29 +112,3 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ShortAboutSection);
-
-/* <div className={styles.aboutText}>
-    Nasze domki drewniane wykonujemy z balika świerkowego lub
-                sosnowego (145/45 mm) w technologii węgłowej, tzn z wycięciem w
-                narożnikach, pozwalającym na zazębienie się kolejnych warstw
-                ścian tworząc zwartą i mocną konstrukcję.
-<br />
-<br />
-<br />
-<br />
-a materiały
-                wykorzystywane do produkcji naszych domków są najwyższej
-                jakości, pozyskiwane z legalnych źródeł.
-<br />
-<br />
-Jesteśmy producentem, dlatego możemy się dostosować do
-indywidualnych preferencji klienta.
-<br />
-<br />
-
-<br />
-<br />
-Jesteśmy w stanie kompleksowo wyposażyć każdy ośrodek wczasowy.
-<br />
-<br />
-</div> */

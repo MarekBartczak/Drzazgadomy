@@ -18,6 +18,7 @@ class Navbar extends Component {
         <div className={styles.name}></div>
         <Hamburger />
         <RightSlide toggle={!this.props.hamburgerMenu.isClose} />
+
         <div className={styles.nav}>
           <div className={styles.home} onClick={() => this.scrollTo("home")}>
             Strona Główna
@@ -40,7 +41,6 @@ class Navbar extends Component {
           >
             Etapy Budowy
           </div>
-          {/* <div className={styles.contactUs}>Galeria</div> */}
         </div>
         <div className={styles.phoneMobile}>
           <a href="tel:+48342234345">
