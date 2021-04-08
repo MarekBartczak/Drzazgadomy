@@ -7,7 +7,6 @@
   background-size: cover;
   width: 100vw;
   /* top: 100px; */
-
   height: calc(100vh - 100px - 100px);
   z-index: -100;
   animation-name: backgroundSize;
