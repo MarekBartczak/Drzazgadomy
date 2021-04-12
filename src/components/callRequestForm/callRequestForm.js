@@ -5,6 +5,10 @@ import SendEmail from "./modalSendEmail/modalSendEmail";
 import Aux from "../../hoc/aux";
 import { connect } from "react-redux";
 import * as actionsTypes from "../../store/actions/actions";
+// import dotenv from "dotenv";
+
+// dotenv.config();
+// console.log(process.env.REACT_APP_EMAIL_SERVICE_ID);
 
 class CallRequestForm extends Component {
   state = {
@@ -28,10 +32,10 @@ class CallRequestForm extends Component {
 
     emailjs
       .send(
-        "service_y6p8h4i",
-        "template_ttzid8a",
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_SERVICE_TEMPLATE,
         templateParams,
-        "user_8M89hEsl6TJjpKWX3rQDS"
+        process.env.REACT_APP_EMAIL_SERVICE_USER
       )
       .then(() => this.props.onShowModal(true));
     this.resetForm();
