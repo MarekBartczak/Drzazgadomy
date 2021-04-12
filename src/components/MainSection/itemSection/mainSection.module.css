@@ -39,6 +39,9 @@
   }
 }
 @media (max-width: 830px) {
+  .offerTitle {
+    top: 200px;
+  }
   .MainSection {
     width: 100vw;
     /* column-gap: 5px; */

@@ -1,0 +1,32 @@
+.emailSend {
+  position: fixed;
+  display: block;
+  top: 50vh;
+  left: calc(50vw - 150px);
+  width: 300px;
+  /* height: 200px; */
+  /* padding: ; */
+  background: rgb(83, 83, 83);
+  color: white;
+  z-index: 10000;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+}
+.msg {
+  text-align: left;
+  margin: 20px;
+}
+
+.ok {
+  color: white;
+
+  border: 1px solid white;
+  background: rgb(98, 98, 98);
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+}
+.ok:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+}

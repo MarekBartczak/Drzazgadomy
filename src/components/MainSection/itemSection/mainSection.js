@@ -33,7 +33,7 @@ class MainSection extends Component {
         this.setState({ animation3: "running" });
       }
     });
-    this.props.onSaveoffsetTop(this.offerRef.offsetTop + 100);
+    this.props.onSaveoffsetTop(this.offerRef.offsetTop);
   }
 
   render() {

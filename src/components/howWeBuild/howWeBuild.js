@@ -10,7 +10,9 @@ class HowWeBuild extends Component {
     animation: "paused",
   };
   componentDidMount() {
-    this.props.onSaveoffsetTop(this.showEl.offsetTop - 70);
+    console.log(this.showEl.classList.value);
+    this.props.onSaveoffsetTop(this.showEl.offsetTop - 20);
+    // this.props.onSaveoffsetTop(this.showEl.classList.value);
     window.addEventListener("scroll", () => {
       let position = this.props.componentsTop.howWeBuild;
       if (document.documentElement.scrollTop > position - 600) {
@@ -73,12 +75,13 @@ class HowWeBuild extends Component {
 
     return (
       <Aux>
+        <div className={styles.title} ref={(el) => (this.showEl = el)}>
+          Etapy Budowy
+        </div>
         <div
           className={styles.howWeBuild}
           style={{ animationPlayState: this.state.animation }}
-          ref={(el) => (this.showEl = el)}
         >
-          <div className={styles.title}>Etapy Budowy</div>
           <div className={styles.position}>
             {this.gallery()}
 

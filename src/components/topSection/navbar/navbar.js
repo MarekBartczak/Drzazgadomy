@@ -12,10 +12,20 @@ class Navbar extends Component {
       behavior: "smooth",
     });
   };
+
+  // getClass = (el) => {
+  //   console.log(el);
+  //   // window.scro
+  //   console.log(document.querySelector(`.${el}`).offsetParent.offsetTop);
+  //   // console.log(document.documentElement(el));
+  // };
   render() {
     return (
       <div className={styles.navbar}>
-        <div className={styles.name}></div>
+        <div
+          className={styles.name}
+          onClick={() => this.scrollTo("home")}
+        ></div>
         <Hamburger />
         <RightSlide toggle={!this.props.hamburgerMenu.isClose} />
 
@@ -37,6 +47,7 @@ class Navbar extends Component {
           </div>
           <div
             className={styles.howWebuild}
+            // onClick={() => this.scrollTo("howWeBuild")}
             onClick={() => this.scrollTo("howWeBuild")}
           >
             Etapy Budowy

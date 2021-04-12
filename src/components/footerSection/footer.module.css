@@ -39,12 +39,15 @@
 }
 
 .about,
-.contact {
+.phone,
+.mail {
+  cursor: pointer;
   color: rgb(211, 211, 211);
   transition: all 0.2s linear;
 }
 .about:hover,
-.contact:hover {
+.phone:hover,
+.mail:hover {
   color: rgb(211, 147, 28);
 }
 

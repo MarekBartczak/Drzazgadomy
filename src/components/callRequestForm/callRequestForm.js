@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import styles from "./callRequestForm.module.css";
 import * as emailjs from "emailjs-com";
+import SendEmail from "./modalSendEmail/modalSendEmail";
+import Aux from "../../hoc/aux";
+import { connect } from "react-redux";
+import * as actionsTypes from "../../store/actions/actions";
 
 class CallRequestForm extends Component {
   state = {
@@ -29,7 +33,7 @@ class CallRequestForm extends Component {
         templateParams,
         "user_8M89hEsl6TJjpKWX3rQDS"
       )
-      .then(() => alert("Wiadomość zostala wysłana"));
+      .then(() => this.props.onShowModal(true));
     this.resetForm();
   };
   resetForm = () => {
@@ -45,51 +49,66 @@ class CallRequestForm extends Component {
   };
   render() {
     return (
-      <div className={styles.callRequestForm}>
-        <div className={styles.title}>Możemy do Ciebie zadzwonić </div>
-        <div className={styles.textInfo}>
-          Zostaw swoje imię, oraz numer telefonu. <br />
-          Odezwiemy się najszybciej jak tylko będziemy mogli
-        </div>
+      <Aux>
+        <SendEmail show={this.state.showModalSendEmail} />
+        <div className={styles.callRequestForm}>
+          <div className={styles.title}>Możemy do Ciebie zadzwonić </div>
+          <div className={styles.textInfo}>
+            Zostaw swoje imię, oraz numer telefonu. <br />
+            Odezwiemy się najszybciej jak tylko będziemy mogli
+          </div>
 
-        <div className={styles.form}>
-          <input
-            value={this.state.name}
-            name="name"
-            onChange={this.handleChange.bind(this, "name")}
-            type="text"
-            className={styles.callRequestName}
-            placeholder={"Imię"}
-          ></input>
-          <input
-            type="text"
-            value={this.state.phone}
-            name="phone"
-            onChange={this.handleChange.bind(this, "phone")}
-            className={styles.callRequestPhone}
-            placeholder={"Nr telefonu"}
-          ></input>
-          <select
-            className={styles.callRequestTime}
-            value={this.state.contactTime}
-            name="contactTime"
-            onChange={this.handleChange.bind(this, "contactTime")}
-          >
-            <option value="" selected disabled hidden>
-              pora kontaktu
-            </option>
-            <option>O każdej porze</option>
-            <option>Rano</option>
-            <option>Południe</option>
-            <option>Wieczór</option>
-          </select>
-          <button className={styles.callRequestBtn} onClick={this.sendEmail}>
-            Proszę o kontakt
-          </button>
+          <div className={styles.form}>
+            <input
+              value={this.state.name}
+              name="text"
+              onChange={this.handleChange.bind(this, "name")}
+              type="text"
+              className={styles.callRequestName}
+              placeholder={"Imię"}
+            ></input>
+            <input
+              type="number"
+              inputMode="numeric"
+              pattern="[0-9]*"
+              value={this.state.phone}
+              name="phone"
+              onChange={this.handleChange.bind(this, "phone")}
+              className={styles.callRequestPhone}
+              placeholder={"Nr telefonu"}
+            ></input>
+            <select
+              className={styles.callRequestTime}
+              value={this.state.contactTime}
+              name="contactTime"
+              onChange={this.handleChange.bind(this, "contactTime")}
+            >
+              <option value="" selected disabled hidden>
+                pora kontaktu
+              </option>
+              <option>O każdej porze</option>
+              <option>Rano</option>
+              <option>Południe</option>
+              <option>Wieczór</option>
+            </select>
+            <button className={styles.callRequestBtn} onClick={this.sendEmail}>
+              Proszę o kontakt
+            </button>
+          </div>
         </div>
-      </div>
+      </Aux>
     );
   }
 }
-
-export default CallRequestForm;
+const mapStateToProps = (state) => {
+  return {
+    ...state,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onShowModal: (showModal) =>
+      dispatch({ type: actionsTypes.SHOW_MODAL_SEND_EMAIL, show: showModal }),
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(CallRequestForm);

@@ -193,6 +193,11 @@
     margin: 15px 0;
   }
 }
+@media (max-width: 668px) {
+  .callRequestForm {
+    margin-top: 100px;
+  }
+}
 
 @media (max-width: 390px) {
   .title {
@@ -206,10 +211,16 @@
   }
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"],
+select:focus {
   font-size: inherit;
 }
 
-select {
+/* select {
   font-size: inherit;
-}
+  width: auto;
+} */
+/* select:focus {
+  font-size: inherit;
+} */

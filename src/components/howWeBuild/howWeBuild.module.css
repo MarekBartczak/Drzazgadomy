@@ -17,8 +17,10 @@
   }
 }
 .title {
+  margin-top: 20px;
   position: relative;
-  top: -5vh;
+  /* top: -5vh; */
+  margin-bottom: 5vh;
   font-size: 40px;
   color: rgb(211, 211, 211);
   padding-left: 15vw;
@@ -206,7 +208,7 @@ i {
 
 @media (max-width: 600px) {
   .title {
-    font-size: 25px;
+    /* font-size: 25px; */
     top: -5px;
   }
   .howWeBuild {

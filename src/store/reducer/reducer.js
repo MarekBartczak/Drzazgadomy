@@ -71,6 +71,7 @@ const initialState = {
     home: 0,
     howWeBuild: 0,
   },
+  showModalSendEmail: false,
   howWeBuild: {
     picturesUrl: [
       "./assets/howWeBuild/00.jpeg",
@@ -125,6 +126,12 @@ const reducer = (state = initialState, action) => {
           ...state.componentsTop,
           howWeBuild: action.saveTop,
         },
+      };
+    }
+    case actionsTypes.SHOW_MODAL_SEND_EMAIL: {
+      return {
+        ...state,
+        showModalSendEmail: action.show,
       };
     }
 
