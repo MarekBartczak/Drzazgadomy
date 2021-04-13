@@ -35,6 +35,7 @@ const initialState = {
       side2Url: "./assets/offer/DM01/side2.jpeg",
       number: "01",
       header: "Domek Letniskowy",
+      animation: "paused",
       description: {
         size: "7x5 + taras 2m",
         price: "30750zł brutto",
@@ -48,8 +49,8 @@ const initialState = {
       side1Url: "./assets/offer/DM02/side1.jpeg",
       side2Url: "./assets/offer/DM02/side2.jpeg",
       number: "02",
-
       header: "Domek Letniskowy",
+      animation: "paused",
       description: {
         size: "5.8x6",
         price: "48000zł brutto",
@@ -63,8 +64,8 @@ const initialState = {
       side1Url: "./assets/offer/DM03/side1.jpeg",
       side2Url: "./assets/offer/DM03/side2.jpeg",
       number: "03",
-
       header: "Domek Letniskowy",
+      animation: "paused",
       description: {
         size: "4x5 + piętro (wysokośc 5m)",
         price: "78000zł brutto",
@@ -78,8 +79,8 @@ const initialState = {
       side1Url: "./assets/offer/DM04/side1.jpeg",
       side2Url: "./assets/offer/DM04/side2.jpeg",
       number: "04",
-
       header: "Domek Letniskowy",
+      animation: "paused",
       description: {
         size: "4x6 + taras 2.3x4",
         price: "29500zł brutto",

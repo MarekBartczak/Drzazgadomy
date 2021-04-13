@@ -43,6 +43,23 @@ class MainSection extends Component {
           Oferta
         </div>
         <div className={styles.MainSection}>
+          {/* {this.props.items.map((element, index) => {
+            return (
+              <ItemCard
+                key={index}
+                ref={(el) => (this.showEl = el)}
+                animation={this.state.animation}
+                number={element.number}
+                ItemCardPictureUrl={element.picUrl}
+                ItemCardHeader={element.header}
+                size={element.description.size}
+                price={element.description.price}
+                include={element.description.include}
+                side1={element.side1Url}
+                side2={element.side2Url}
+              />
+            );
+          })} */}
           <ItemCard
             ref={(el) => (this.showEl = el)}
             animation={this.state.animation}

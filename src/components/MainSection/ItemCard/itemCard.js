@@ -12,7 +12,6 @@ class ItemCard extends Component {
   };
 
   render() {
-    // console.log(this.props.animation);
     return (
       <Aux>
         <div
