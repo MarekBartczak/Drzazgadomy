@@ -2,7 +2,7 @@
   display: none;
   position: absolute;
   background: rgba(0, 0, 0, 0.74);
-  width: 50vw;
+  width: 30vw;
   top: 0;
   right: 0;
   color: rgb(211, 211, 211);
@@ -15,19 +15,13 @@
   text-align: left;
   margin-top: 100px;
 }
-.home,
-.shortAbout,
-.offer,
-.buildSteps {
+.btn {
   margin-top: 20px;
   font-size: 25px;
   cursor: pointer;
 }
 
-.home:hover,
-.shortAbout:hover,
-.offer:hover,
-.buildSteps:hover {
+.btn:hover {
   color: rgb(211, 147, 28);
 }
 
@@ -46,12 +40,19 @@
     display: block;
   }
 }
+@media (max-width: 850px) {
+  .rightSlide {
+    width: 40vw;
+  }
+}
+@media (max-width: 600px) {
+  .rightSlide {
+    width: 50vw;
+  }
+}
 
 @media (max-width: 500px) {
-  .home,
-  .shortAbout,
-  .offer,
-  .buildSteps {
+  .btn {
     margin-top: 20px;
     font-size: 15px;
     cursor: pointer;

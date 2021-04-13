@@ -17,10 +17,6 @@ class CallRequestForm extends Component {
     contactTime: "",
   };
 
-  componentDidUpdate() {
-    console.log(this.state);
-  }
-
   sendEmail = () => {
     let templateParams = {
       from_name: this.state.name,

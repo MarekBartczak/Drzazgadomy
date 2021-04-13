@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styles from "./rightSlide.module.css";
 import { connect } from "react-redux";
 import * as actionsTypes from "../../store/actions/actions";
-import smoothscroll from "smoothscroll-polyfill";
+import Button from "../NavBtn/navBtn";
 
 class RightSlie extends Component {
   toggleSlide = () => {
@@ -14,44 +14,24 @@ class RightSlie extends Component {
     }
     return cssStyle.join(" ");
   };
-  scrollTo = (el) => {
-    smoothscroll.polyfill();
-
-    window.scrollTo({
-      top: this.props.componentsTop[el] - 100,
-      behavior: "smooth",
-    });
-    this.props.onCLoseRightSlide();
-  };
 
   render() {
     return (
       <div className={this.toggleSlide()}>
         <div className={styles.links}>
-          <div className={styles.home} onClick={() => this.scrollTo("home")}>
-            Strona Główna
-          </div>
-          <div
-            className={styles.shortAbout}
-            onClick={() => this.scrollTo("shortAboutTop")}
-          >
-            {" "}
-            O Firmie
-          </div>
-          <div
-            className={styles.offer}
-            onClick={() => this.scrollTo("offerTop")}
-          >
-            {" "}
-            Oferta
-          </div>
-          <div
-            className={styles.buildSteps}
-            onClick={() => this.scrollTo("howWeBuild")}
-          >
-            {" "}
-            Etapy Budowy
-          </div>
+          {this.props.btns.map((el, index) => {
+            return (
+              <div key={index}>
+                {" "}
+                <Button
+                  btnStyle={styles[el.style]}
+                  sectionPosition={el.positionName}
+                  btnName={el.name}
+                  close={() => this.props.onCLoseRightSlide()}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     );

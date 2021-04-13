@@ -10,7 +10,6 @@ class HowWeBuild extends Component {
     animation: "paused",
   };
   componentDidMount() {
-    console.log(this.showEl.classList.value);
     this.props.onSaveoffsetTop(this.showEl.offsetTop - 20);
     // this.props.onSaveoffsetTop(this.showEl.classList.value);
     window.addEventListener("scroll", () => {

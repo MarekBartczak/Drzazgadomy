@@ -3,22 +3,9 @@ import styles from "./navbar.module.css";
 import Hamburger from "../hamburger/hamburger";
 import { connect } from "react-redux";
 import RightSlide from "../../rightSlide/rightSlide";
+import Button from "../../NavBtn/navBtn";
 
 class Navbar extends Component {
-  scrollTo = (el) => {
-    // document.documentElement
-    window.scrollTo({
-      top: this.props.componentsTop[el],
-      behavior: "smooth",
-    });
-  };
-
-  // getClass = (el) => {
-  //   console.log(el);
-  //   // window.scro
-  //   console.log(document.querySelector(`.${el}`).offsetParent.offsetTop);
-  //   // console.log(document.documentElement(el));
-  // };
   render() {
     return (
       <div className={styles.navbar}>
@@ -30,28 +17,19 @@ class Navbar extends Component {
         <RightSlide toggle={!this.props.hamburgerMenu.isClose} />
 
         <div className={styles.nav}>
-          <div className={styles.home} onClick={() => this.scrollTo("home")}>
-            Strona Główna
-          </div>
-          <div
-            className={styles.about}
-            onClick={() => this.scrollTo("shortAboutTop")}
-          >
-            O Firmie
-          </div>
-          <div
-            className={styles.offer}
-            onClick={() => this.scrollTo("offerTop")}
-          >
-            Oferta
-          </div>
-          <div
-            className={styles.howWebuild}
-            // onClick={() => this.scrollTo("howWeBuild")}
-            onClick={() => this.scrollTo("howWeBuild")}
-          >
-            Etapy Budowy
-          </div>
+          {this.props.btns.map((el, index) => {
+            return (
+              <div key={index}>
+                {" "}
+                <Button
+                  btnStyle={styles[el.style]}
+                  sectionPosition={el.positionName}
+                  btnName={el.name}
+                  close={() => null}
+                />
+              </div>
+            );
+          })}
         </div>
         <div className={styles.phoneMobile}>
           <a href="tel:+48342234345">

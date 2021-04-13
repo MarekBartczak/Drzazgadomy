@@ -1,6 +1,33 @@
 import * as actionsTypes from "../actions/actions";
 
 const initialState = {
+  btns: [
+    {
+      name: "Strona główna",
+      style: "btn",
+      positionName: "home",
+    },
+    {
+      name: "O firmie",
+      style: "btn",
+      positionName: "shortAboutTop",
+    },
+    {
+      name: "Oferta",
+      style: "btn",
+      positionName: "offerTop",
+    },
+    {
+      name: "Etapy budowy",
+      style: "btn",
+      positionName: "howWeBuild",
+    },
+    {
+      name: "Galeria",
+      style: "btn",
+      positionName: "gallery",
+    },
+  ],
   items: [
     {
       picUrl: "./assets/offer/DM01/main.jpeg",
