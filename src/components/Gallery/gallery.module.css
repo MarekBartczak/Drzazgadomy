@@ -1,3 +1,16 @@
 .gallery {
-  width: 70vw;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  /* height: calc(100vh - 120px); */
+  color: red;
+  /* margin-bottom: 100px; */
+}
+.title {
+  margin-top: 140px;
+  position: relative;
+  margin-bottom: 5vh;
+  font-size: 40px;
+  color: rgb(211, 211, 211);
+  padding-left: 15vw;
 }

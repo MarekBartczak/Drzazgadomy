@@ -9,8 +9,10 @@ import Background from "./components/topSection/background/background";
 import ShortAboutSection from "./components/ShortAboutSection/shortAboutSection";
 import CallRequestForm from "./components/callRequestForm/callRequestForm";
 import Items from "./components/MainSection/itemSection/mainSection";
+import Gallery from "./components/Gallery/gallery";
 import HowWeBuild from "./components/howWeBuild/howWeBuild";
 import Footer from "./components/footerSection/footer";
+
 class App extends Component {
   render() {
     return (
@@ -21,6 +23,7 @@ class App extends Component {
         <Background />
         <CallRequestForm />
         <ShortAboutSection />
+        <Gallery />
         <Items />
         <HowWeBuild />
         <Footer />

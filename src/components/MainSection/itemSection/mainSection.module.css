@@ -18,6 +18,7 @@
 .offerTitle {
   position: relative;
   top: 90px;
+  /* margin-top: 100px; */
   color: rgb(211, 211, 211);
 
   /* background: red; */
@@ -39,9 +40,9 @@
   }
 }
 @media (max-width: 830px) {
-  .offerTitle {
+  /* .offerTitle {
     top: 200px;
-  }
+  } */
   .MainSection {
     width: 100vw;
     /* column-gap: 5px; */

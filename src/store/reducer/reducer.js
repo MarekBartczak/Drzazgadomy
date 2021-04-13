@@ -13,6 +13,11 @@ const initialState = {
       positionName: "shortAboutTop",
     },
     {
+      name: "Galeria",
+      style: "btn",
+      positionName: "gallery",
+    },
+    {
       name: "Oferta",
       style: "btn",
       positionName: "offerTop",
@@ -22,11 +27,21 @@ const initialState = {
       style: "btn",
       positionName: "howWeBuild",
     },
-    {
-      name: "Galeria",
-      style: "btn",
-      positionName: "gallery",
-    },
+  ],
+  gallery: [
+    { url: "./assets/gallery/pictures/00.jpeg" },
+    { url: "./assets/gallery/pictures/01.jpeg" },
+    { url: "./assets/gallery/pictures/02.jpeg" },
+    { url: "./assets/gallery/pictures/03.jpeg" },
+    { url: "./assets/gallery/pictures/04.jpeg" },
+    { url: "./assets/gallery/pictures/05.jpeg" },
+    { url: "./assets/gallery/pictures/06.jpeg" },
+    { url: "./assets/gallery/pictures/07.jpeg" },
+    { url: "./assets/gallery/pictures/08.jpeg" },
+    { url: "./assets/gallery/pictures/09.jpeg" },
+    { url: "./assets/gallery/pictures/10.jpeg" },
+    { url: "./assets/gallery/pictures/11.jpeg" },
+    // { url: "./assets/gallery/pictures/12.jpeg" },
   ],
   items: [
     {
@@ -98,6 +113,7 @@ const initialState = {
     shortAboutTop: 0,
     home: 0,
     howWeBuild: 0,
+    gallery: 0,
   },
   showModalSendEmail: false,
   howWeBuild: {
@@ -153,6 +169,15 @@ const reducer = (state = initialState, action) => {
         componentsTop: {
           ...state.componentsTop,
           howWeBuild: action.saveTop,
+        },
+      };
+    }
+    case actionsTypes.SAVE_GALLERY_TOP: {
+      return {
+        ...state,
+        componentsTop: {
+          ...state.componentsTop,
+          gallery: action.saveTop,
         },
       };
     }

@@ -66,12 +66,6 @@ class HowWeBuild extends Component {
   };
 
   render() {
-    // console.log(position);
-    // if (document.documentElement.scrollTop > position) {
-    //   console.log("run");
-    //   this.setState({ animation: "running" });
-    // }
-
     return (
       <Aux>
         <div className={styles.title} ref={(el) => (this.showEl = el)}>
