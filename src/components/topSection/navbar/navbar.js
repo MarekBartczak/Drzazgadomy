@@ -11,7 +11,12 @@ class Navbar extends Component {
       <div className={styles.navbar}>
         <div
           className={styles.name}
-          onClick={() => this.scrollTo("home")}
+          onClick={() =>
+            window.scrollTo({
+              top: this.props.componentsTop[this.props.sectionPosition] - 100,
+              behavior: "smooth",
+            })
+          }
         ></div>
         <Hamburger />
         <RightSlide toggle={!this.props.hamburgerMenu.isClose} />
