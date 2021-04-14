@@ -60,7 +60,7 @@ const initialState = {
         price: "30750zł brutto",
         include: `montaż, 
         impregnacja wewnętrzna i zewnętrzna, 
-        izolacja dachu, drzwi wejściowe, 2 okna `,
+        izolacja dachu, drzwi wejściowe, okna `,
       },
     },
     {
@@ -75,7 +75,7 @@ const initialState = {
         price: "48000zł brutto",
         include: `montaż, 
         impregnacja wewnętrzna i zewnętrzna, 
-        izolacja dachu, drzwi wejściowe, 2 okna `,
+        izolacja dachu, drzwi wejściowe, okna `,
       },
     },
     {
@@ -90,7 +90,7 @@ const initialState = {
         price: "78000zł brutto",
         include: `montaż, 
         impregnacja wewnętrzna i zewnętrzna, 
-        izolacja dachu, drzwi wejściowe, 2 okna `,
+        izolacja dachu, drzwi wejściowe, okna `,
       },
     },
     {
@@ -105,7 +105,7 @@ const initialState = {
         price: "29500zł brutto",
         include: `montaż, 
         impregnacja wewnętrzna i zewnętrzna, 
-        izolacja dachu, drzwi wejściowe, 2 okna `,
+        izolacja dachu, drzwi wejściowe, okna `,
       },
     },
   ],
