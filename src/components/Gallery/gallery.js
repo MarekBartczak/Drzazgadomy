@@ -2,13 +2,12 @@ import React, { Component } from "react";
 import styles from "./gallery.module.css";
 import Aux from "../../hoc/aux";
 import { connect } from "react-redux";
-// import SelectedPicture from "./SelectedPicture/selectedPicture";
 import GridWithAllPictures from "./GridWithAllPictures/gridWithAllPictures";
 import * as actionsTypes from "../../store/actions/actions";
 
 class Gallery extends Component {
   componentDidMount() {
-    this.props.onSaveoffsetTop(this.showEl.offsetTop + 100);
+    this.props.onSaveoffsetTop(this.showEl.offsetTop);
   }
   render() {
     return (

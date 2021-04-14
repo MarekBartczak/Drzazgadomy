@@ -43,6 +43,10 @@ const initialState = {
     { url: "./assets/gallery/pictures/11.jpeg" },
     // { url: "./assets/gallery/pictures/12.jpeg" },
   ],
+  selectedPicture: {
+    url: null,
+  },
+  showSelectedPictureFromGallery: false,
   items: [
     {
       picUrl: "./assets/offer/DM01/main.jpeg",
@@ -185,6 +189,21 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         showModalSendEmail: action.show,
+      };
+    }
+    case actionsTypes.SHOW_GALLERY_PIC: {
+      return {
+        ...state,
+        showSelectedPictureFromGallery: !state.showSelectedPictureFromGallery,
+      };
+    }
+    case actionsTypes.SELECTED_PICTURE_URL: {
+      return {
+        ...state,
+        selectedPicture: {
+          ...state.selectedPicture,
+          url: action.url,
+        },
       };
     }
 
