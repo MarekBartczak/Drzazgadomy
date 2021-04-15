@@ -20,7 +20,7 @@ class CallRequestForm extends Component {
   sendEmail = () => {
     let templateParams = {
       from_name: this.state.name,
-      to_name: "marek.bartczak@gmail.com",
+      to_name: "drzazgadomy@gmail.com",
       subject: "Nowa wiadomosc",
       contact_time: this.state.contactTime,
       phone_number_client: this.state.phone,
