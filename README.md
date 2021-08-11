@@ -1,5 +1,5 @@
 # Drzazgadomy
-[link](www.drzazgadomy.pl)
+[WWW](www.drzazgadomy.pl)
 
 ##preview
 
